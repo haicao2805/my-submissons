@@ -1,8 +1,6 @@
 import { config } from "../../config";
 import { MongoClient, Db } from "mongodb";
 
-import { logger } from "./logging";
-
 let db: Db;
 
 export const initDb = () => {
@@ -11,19 +9,19 @@ export const initDb = () => {
         { useUnifiedTopology: true, useNewUrlParser: true },
         (error, result) => {
             if (error) {
-                return logger.error(
+                return console.log(
                     `Connect to mongodb failed: ${error.message}`
                 );
             }
             db = result.db("test");
-            logger.info(`Connect to database successfully`);
+            console.log(`Connect to database successfully`);
         }
     );
 };
 
 export const getDb = () => {
     if (!db) {
-        logger.error("You have to initialized DB");
+        console.log("You have to initialized DB");
     }
 
     return db;
