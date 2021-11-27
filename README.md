@@ -23,12 +23,30 @@ git clone https://github.com/haicao2805/my-submissions.git
 # Task 1
 
 Open folder task1 with this command: `cd task1`
-![](https://github.com/haicao2805/my-submissons/images/cdtask1.png)
+![.](/images/cdtask1.png)
 
 ## Task 1.1
+- Open file t1.1.js
+- Enter input at the top of the file
+![.](/images/inputt11.png)
+- Run with this command `node t1.1.js`
+- Output
+![.](/images/outputt11.png)
 
 ## Task 1.2
+- Open file t1.2.js
+- Enter input at the top of the file
+![.](/images/inputt12.png)
+- Run with this command `node t1.2.js`
+- Output
+![.](/images/outputt12.png)
 
 ## Task 1.3
+- Open file t1.3.js
+- Enter input at the top of the file
+![.](/images/inputt13.png)
+- Run with this command `node t1.3.js`
+- Output
+![.](/images/outputt13.png)
 
 # Task 2
