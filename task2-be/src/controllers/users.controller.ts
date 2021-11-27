@@ -62,7 +62,6 @@ userController.get("/", async (req, res) => {
 });
 
 userController.post("/", async (req, res) => {
-    console.log(req.body);
     const { error } = UserValidator.validateUser(req.body);
     if (error) {
         return res

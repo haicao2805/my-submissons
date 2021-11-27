@@ -1,0 +1,10 @@
+version: "3"
+services:
+  server:
+    image: haicao2805/task2-be:latest
+    container_name: task2-be
+    build: .
+    ports:
+      - 4000:4000
+    env_file:
+            - ./config/.env.production
