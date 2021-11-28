@@ -70,7 +70,7 @@ yarn run start
 ![.](/images/runbe.png)
 
 ## Front-end
-
+-   Open a new terminal
 -   Open folder task2-fe with this command: `cd task2-fe`
     ![.](/images/cdtask2fe.png)
 -   Run following commands
