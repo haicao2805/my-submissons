@@ -13,5 +13,5 @@ export const routers = (app: Express) => {
     app.use(express.urlencoded({ extended: true }));
     //main routers
 
-    app.use("/user", userController);
+    app.use("/api/user", userController);
 };
