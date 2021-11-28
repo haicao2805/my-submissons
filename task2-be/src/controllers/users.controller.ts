@@ -9,7 +9,7 @@ const userController = express.Router();
 userController.get("/:id", async (req, res) => {
     const id = req.params.id;
     if (id.length > 24) {
-        return res.json({
+        return res.status(404).json({
             data: null,
             message: "",
             errorMessage: "Not found",
@@ -20,7 +20,7 @@ userController.get("/:id", async (req, res) => {
         .findOne({ _id: new ObjectId(id) });
 
     if (result == null) {
-        return res.json({
+        return res.status(404).json({
             data: result,
             message: "",
             errorMessage: "Not found",
@@ -39,7 +39,7 @@ userController.get("/", async (req, res) => {
 
     if (!nameParam) {
         result = await getDb().collection<User>("users").find().toArray();
-        return res.json({
+        return res.status(200).json({
             data: result,
             message: "",
             errorMessage: "",
@@ -54,7 +54,7 @@ userController.get("/", async (req, res) => {
             ],
         })
         .toArray();
-    return res.json({
+    return res.status(200).json({
         data: result,
         message: "",
         errorMessage: "",

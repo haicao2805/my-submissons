@@ -32,6 +32,9 @@ const UpdateForm = () => {
                 setEnteredUsername(result.data.data.username);
                 setEnteredEmail(result.data.data.email);
                 setEnteredBirthday(result.data.data.birthday);
+            })
+            .catch(() => {
+                navigate("/");
             });
     }, []);
 
