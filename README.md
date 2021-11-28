@@ -53,3 +53,24 @@ Open folder task1 with this command: `cd task1`
     ![.](/images/outputt13.png)
 
 # Task 2
+## Back-end
+- Open folder task2-be with this command: `cd task2-be`
+![.](/images/cdtask2be.png)
+- Run following commands
+```
+yarn install
+yarn run start
+```
+![.](/images/runbe.png)
+## Front-end
+- Open folder task2-fe with this command: `cd task2-fe`
+![.](/images/cdtask2fe.png)
+- Run following commands
+```
+yarn install
+yarn run start
+```
+![.](/images/runfe.png)
+
+## Open browser, go to http://http://localhost:3000/
+![.](/images/result.png)
