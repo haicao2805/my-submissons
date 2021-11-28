@@ -70,7 +70,6 @@ yarn run start
 yarn install
 yarn run start
 ```
-![.](/images/runfe.png)
 
-## Open browser, go to http://http://localhost:3000/
+## Open browser, go to http://localhost:3000/
 ![.](/images/result.png)
