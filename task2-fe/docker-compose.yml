@@ -1,0 +1,8 @@
+version: "3"
+services:
+  server:
+    image: haicao2805/task2-fe:latest
+    container_name: task2-fe
+    build: .
+    ports:
+      - 3000:3000
